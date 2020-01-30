@@ -6,8 +6,8 @@ RUN apk update \
   
 RUN git clone https://github.com/Damien9527/backend.git
 
-RUN cd backend && go build . 
+RUN cd backend && date
 
-CMD ./backend
+CMD  tailf /dev/null
 
 
