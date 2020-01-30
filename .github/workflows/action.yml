@@ -11,13 +11,13 @@ jobs:
      #This Action Emits 2 Variables, IMAGE_SHA_NAME and IMAGE_URL 
      #which you can reference in subsequent steps
     - name: Publish Docker Image to GPR
-      uses: machine-learning-apps/gpr-docker-publish@master
+      uses: Damien9527/backend@master
       id: docker
       with:
         IMAGE_NAME: 'wuhan-support-backend'
-        TAG: 'my-optional-tag-name'
-        DOCKERFILE_PATH: './Dockerfile'
-        BUILD_CONTEXT: ''
+        TAG: 'my-optional-tag-name001'
+        DOCKERFILE_PATH: 'Dockerfile'
+        BUILD_CONTEXT: '.'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
